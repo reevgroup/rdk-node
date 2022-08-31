@@ -1,4 +1,4 @@
-<p align="center"><img alt="RDK Logo" src="https://github.com/reevgroup/rdk-dart/blob/main/rdk-logo.png?raw=true"></p>
+<p align="center"><img alt="RDK Logo" src="https://github.com/reevgroup/rdk-node/blob/main/rdk-logo.png?raw=true"></p>
 
 ## Reev Development Kit (RDK) for Javascript
 
