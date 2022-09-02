@@ -1,14 +1,17 @@
-<p align="center"><img alt="RDK Logo" src="https://github.com/reevgroup/rdk-dart/blob/main/rdk-logo.png?raw=true"></p>
+<p align="center"><img alt="RDK Logo" src="https://github.com/reevgroup/rdk-node/blob/main/rdk-logo.png?raw=true"></p>
 
 ## Reev Development Kit (RDK) for Javascript
 
 The official Reev Development Kit (RDK) for Javascript that provides APIs for reading, creating, updating and deleting user and system data, authentication, and access to activity. Most methods are same as in JS, but there are some differences because of Dart type
 system.
 
-## Installation
+## Installation via packages.json
 
 ```
-npm install @rdk/sdk
+"dependencies":{
+	// Other packages
+	"rdk": "github:reevgroup/rdk-node"
+}
 ```
 
 ## Basic Usage
