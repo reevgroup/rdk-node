@@ -28,8 +28,8 @@
 		"test": "vitest --typecheck --watch=false"
 	},
 	"devDependencies": {
-		"@rdk/system-data": "workspace:*",
-		"@rdk/tsconfig": "3.0.0",
+		"@directus/system-data": "workspace:*",
+		"@directus/tsconfig": "3.0.0",
 		"esbuild-plugin-replace": "1.4.0",
 		"tsup": "8.4.0",
 		"typescript": "5.8.2",

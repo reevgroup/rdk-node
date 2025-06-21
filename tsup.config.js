@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'tsup';
 import { replace } from 'esbuild-plugin-replace';
-import { systemCollectionNames } from '@rdk/system-data';
+import { systemCollectionNames } from '@directus/system-data';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
