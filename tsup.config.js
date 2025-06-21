@@ -7,7 +7,7 @@ import { systemCollectionNames } from '@directus/system-data';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const { version } = JSON.parse(await readFile(join(__dirname, '../rdk/package.json'), 'utf8'));
+const { version } = JSON.parse(await readFile(join(__dirname, 'package.json'), 'utf8'));
 
 const env = process.env.NODE_ENV;
 
