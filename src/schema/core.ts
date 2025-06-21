@@ -1,0 +1,45 @@
+import type { RDKActivity } from './activity.js';
+import type { RDKCollection } from './collection.js';
+import type { RDKComment } from './comment.js';
+import type { RDKDashboard } from './dashboard.js';
+import type { RDKExtension } from './extension.js';
+import type { RDKField } from './field.js';
+import type { RDKFile } from './file.js';
+import type { RDKFlow } from './flow.js';
+import type { RDKFolder } from './folder.js';
+import type { RDKNotification } from './notification.js';
+import type { RDKOperation } from './operation.js';
+import type { RDKPanel } from './panel.js';
+import type { RDKPermission } from './permission.js';
+import type { RDKPreset } from './preset.js';
+import type { RDKRelation } from './relation.js';
+import type { RDKRole } from './role.js';
+import type { RDKSettings } from './settings.js';
+import type { RDKShare } from './share.js';
+import type { RDKUser } from './user.js';
+import type { RDKVersion } from './version.js';
+import type { RDKWebhook } from './webhook.js';
+
+export interface CoreSchema<Schema = any> {
+	rdk_activity: RDKActivity<Schema>[];
+	rdk_collections: RDKCollection<Schema>[];
+	rdk_comments: RDKComment<Schema>[];
+	rdk_dashboards: RDKDashboard<Schema>[];
+	rdk_extensions: RDKExtension<Schema>[];
+	rdk_fields: RDKField<Schema>[];
+	rdk_files: RDKFile<Schema>[];
+	rdk_flows: RDKFlow<Schema>[];
+	rdk_folders: RDKFolder<Schema>[];
+	rdk_notifications: RDKNotification<Schema>[];
+	rdk_operations: RDKOperation<Schema>[];
+	rdk_panels: RDKPanel<Schema>[];
+	rdk_permissions: RDKPermission<Schema>[];
+	rdk_presets: RDKPreset<Schema>[];
+	rdk_relations: RDKRelation<Schema>[];
+	rdk_roles: RDKRole<Schema>[];
+	rdk_settings: RDKSettings<Schema>;
+	rdk_shares: RDKShare<Schema>[];
+	rdk_users: RDKUser<Schema>[];
+	rdk_versions: RDKVersion<Schema>[];
+	rdk_webhooks: RDKWebhook<Schema>[];
+}

@@ -1,0 +1,41 @@
+{
+	"name": "@rdk/sdk",
+	"version": "19.1.0",
+	"description": "RDK JavaScript SDK",
+	"homepage": "https://rdk.io",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/reevgroup/rdk-node.git",
+		"directory": "sdk"
+	},
+	"funding": "https://github.com/reevgroup/rdk-node?sponsor=1",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "./dist/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "NODE_ENV=production tsup",
+		"dev": "NODE_ENV=development tsup",
+		"test": "vitest --typecheck --watch=false"
+	},
+	"devDependencies": {
+		"@rdk/system-data": "workspace:*",
+		"@rdk/tsconfig": "3.0.0",
+		"esbuild-plugin-replace": "1.4.0",
+		"tsup": "8.4.0",
+		"typescript": "5.8.2",
+		"vitest": "2.1.9"
+	},
+	"engines": {
+		"node": ">=22"
+	}
+}
