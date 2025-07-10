@@ -46,7 +46,7 @@ const client = createRDK<Schema>('https://your-rdk-instance.com')
   .with(authentication('json'));
 
 // Login
-await client.login('user@example.com', 'password');
+await client.login({email: 'user@example.com', password: 'password'});
 
 // Make requests
 const items = await client.request(readItems('your_collection'));
